@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Carlo E. Abigania | Portfolio</title>
+    <meta name="description"
+        content="Personal portfolio website of John Carlo E. Abigania showcasing skills, projects, and professional experience.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader removed -->
+
+    <!-- Spotlight Cursor (Hidden by default) -->
+    <div class="spotlight-cursor" id="spotlight">
+        <div class="spotlight-circle"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#hero" class="logo">
+                    <span class="logo-text">JCA</span>
+                </a>
+
+                <div class="nav-controls">
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button>
+
+                    <!-- Spotlight Toggle -->
+                    <button class="spotlight-toggle" id="spotlight-toggle" aria-label="Toggle spotlight mode">
+                        <i class="fas fa-lightbulb"></i>
+                    </button>
+
+                    <!-- Inspired By Button -->
+                    <button class="inspired-by-toggle" id="inspired-by-toggle" aria-label="Show inspired by">
+                        <i class="fas fa-info-circle"></i>
+                    </button>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <!-- Navigation Menu -->
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                        <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="hero">
+            <div class="particles-container" id="particles-js"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                        <h1 class="hero-title">
+                            <span class="greeting">Hello, I'm</span>
+                            <span class="name">John Carlo E. Abigania</span>
+                        </h1>
+                        <div class="hero-subtitle">
+                            <span class="static-text">I'm a </span>
+                            <span class="dynamic-text" id="dynamic-text"></span>
+                        </div>
+                        <p class="hero-description">
+                            Passionate about creating elegant solutions through code and design.
+                            Transforming ideas into digital experiences that make a difference.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                            <a href="#" class="btn btn-secondary" id="resume-btn">Download Resume</a>
+                        </div>
+                    </div>
+                    <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="image-container">
+                            <!-- Profile image for home section -->
+                            <img src="https://avatars.githubusercontent.com/u/185792978?v=4"
+                                alt="John Carlo E. Abigania" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <a href="#about">
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-subtitle">My Introduction</div>
+                    <div class="section-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+                        <div class="image-frame">
+                            <!-- About image -->
+                            <img src="https://scontent.fmnl16-1.fna.fbcdn.net/v/t39.30808-6/454007803_3848968302002331_6400796036677704102_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeG6Iu8yQKsA2MtS5BBK_9tRywtKQLpqV3fLC0pAumpXd3bfUf2M7fYU8---MMagg1qQR_V5598Mh7JdaBwOqlo6&_nc_ohc=Xogw2_b1o0kQ7kNvwE9_EL0&_nc_oc=AdmJMVxoNLwWOw9-yYokWrG8Ch5jEhTZiLspFhcw6nsmlqhnoC1UQaDBNBmFHeZehVQ&_nc_zt=23&_nc_ht=scontent.fmnl16-1.fna&_nc_gid=DUZJah5BhC4aYI015F6xtw&oh=00_AfJTReX8LOTd52YsdYT01-90Wg8xR6G2IisRYdmH1Q3PoQ&oe=683CE60D"
+                                alt="John Carlo E. Abigania" class="about-image">
+                        </div>
+                    </div>
+
+                    <div class="about-text" data-aos="fade-left" data-aos-delay="400">
+                        <p>
+                            I am John Carlo E. Abigania, a 4th year Bachelor of Science in Information Technology (BSIT)
+                            student at Pamantasan ng Cabuyao. I am passionate about web development and design, with a
+                            focus on creating user-friendly and responsive applications.
+                        </p>
+                        <p>
+                            Throughout my academic journey, I have gained hands-on experience with various programming
+                            languages and frameworks. My coursework has provided me with a solid foundation in both
+                            front-end and back-end development, allowing me to build complete web applications.
+                        </p>
+                        <p>
+                            I am currently seeking opportunities to apply my skills in real-world projects and continue
+                            learning new technologies. Based in Cabuyao, Laguna, I am eager to contribute to the tech
+                            industry and grow as a developer.
+                        </p>
+
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="4">0</div>
+                                <div class="stat-label">Years of Study</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="10">0</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="5">0</div>
+                                <div class="stat-label">Technologies</div>
+                            </div>
+                        </div>
+
+                        <div class="about-buttons">
+                            <a href="#" class="btn btn-primary" id="about-resume-btn">Download CV</a>
+                            <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="section-subtitle">My Technical Level</div>
+                    <div class="section-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skills-content">
+                    <div class="skills-tabs" data-aos="fade-up" data-aos-delay="200">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-target="frontend">Frontend</button>
+                            <button class="tab-btn" data-target="backend">Backend</button>
+                            <button class="tab-btn" data-target="mobile">Mobile</button>
+                        </div>
+
+                        <div class="tab-content">
+                            <!-- Frontend Skills -->
+                            <div class="tab-pane active" id="frontend">
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-html5"></i>
+                                        </div>
+                                        <h3 class="skill-title">HTML</h3>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-progress="90"></div>
+                                        </div>
+                                        <div class="skill-percentage">90%</div>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-css3-alt"></i>
+                                        </div>
+                                        <h3 class="skill-title">CSS</h3>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-progress="85"></div>
+                                        </div>
+                                        <div class="skill-percentage">85%</div>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-js"></i>
+                                        </div>
+                                        <h3 class="skill-title">JavaScript</h3>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-progress="80"></div>
+                                        </div>
+                                        <div class="skill-percentage">80%</div>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-bootstrap"></i>
+                                        </div>
+                                        <h3 class="skill-title">Bootstrap</h3>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-progress="85"></div>
+                                        </div>
+                                        <div class="skill-percentage">85%</div>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-react"></i>
+                                        </div>
+                                        <h3 class="skill-title">React</h3>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-progress="75"></div>
+                                        </div>
+                                        <div class="skill-percentage">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Backend Skills -->
+                            <div class="tab-pane" id="backend">
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-php"></i>
+                                        </div>
+                                        <h3 class="skill-title">PHP</h3>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-progress="80"></div>
+                                        </div>
+                                        <div class="skill-percentage">80%</div>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-laravel"></i>
+                                        </div>
+                                        <h3 class="skill-title">Laravel</h3>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-progress="75"></div>
+                                        </div>
+                                        <div class="skill-percentage">75%</div>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                        <h3 class="skill-title">MySQL</h3>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-progress="80"></div>
+                                        </div>
+                                        <div class="skill-percentage">80%</div>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-java"></i>
+                                        </div>
+                                        <h3 class="skill-title">Java</h3>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-progress="85"></div>
+                                        </div>
+                                        <div class="skill-percentage">85%</div>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <h3 class="skill-title">CodeIgniter</h3>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-progress="70"></div>
+                                        </div>
+                                        <div class="skill-percentage">70%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mobile Skills -->
+                            <div class="tab-pane" id="mobile">
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </div>
+                                        <h3 class="skill-title">Flutter</h3>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-progress="75"></div>
+                                        </div>
+                                        <div class="skill-percentage">75%</div>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <h3 class="skill-title">Dart</h3>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-progress="75"></div>
+                                        </div>
+                                        <div class="skill-percentage">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="section-subtitle">My Recent Work</div>
+                    <div class="section-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="projects-filter" data-aos="fade-up" data-aos-delay="200">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="app">App</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-img">
+                            <img src="images/e-comerce.png" alt="E-Commerce Website" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Website</h3>
+                            <p class="project-description">
+                                A fully functional e-commerce platform with user authentication, product management,
+                                shopping cart, and secure checkout system.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/CarlAbigania/E-commerce.git" class="project-link"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="app" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-img">
+                            <img src="images/mobile portfolio.png" alt="Portfolio Mobile App" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Portfolio Mobile App</h3>
+                            <p class="project-description">
+                                A cross-platform mobile application built with Flutter, showcasing my portfolio with
+                                responsive design and smooth animations.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Dart</span>
+                                <span class="tag">Mobile</span>
+                                <span class="tag">Cross-platform</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/CarlAbigania/Portfolio-Mobile-App.git" class="project-link"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="design" data-aos="fade-up" data-aos-delay="500">
+                        <div class="project-img">
+                            <img src="images/blogs UI.png" alt="Blogs" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Blogs</h3>
+                            <p class="project-description">
+                                A comprehensive UI/UX design case study showcasing the design process, user research,
+                                wireframing, and final design solutions.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Design</span>
+                                <span class="tag">Case Study</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.figma.com/design/dvsF6huvjZpuK2qV7k3rER/Itew-design-case-study?node-id=0-1&t=cvIsQVvBcx6jVqir-1"
+                                    class="project-link" target="_blank">
+                                    <i class="fas fa-eye"></i> View Design
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="600">
+                        <div class="project-img">
+                            <img src="images/blogs and news.png" alt="Blogs and News Website" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Blogs and News Website</h3>
+                            <p class="project-description">
+                                A modern news and blog platform with multiple categories, article management, author
+                                profiles, and newsletter subscription system.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/CarlAbigania/Blogs-and-News.git" class="project-link"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card" data-category="design" data-aos="fade-up" data-aos-delay="700">
+                        <div class="project-img">
+                            <img src="images/agrimarket UI.png" alt="Agrimarket" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Agrimarket</h3>
+                            <p class="project-description">
+                                A comprehensive UI/UX design for an agricultural marketplace platform, focusing on
+                                connecting farmers with buyers and streamlining the agricultural supply chain.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Design</span>
+                                <span class="tag">Agriculture</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.figma.com/design/QoPQs2u2UwtwrGwN7cn1YM/Agrimarket?node-id=0-1&t=xAHQwTetpRK0vmsq-1"
+                                    class="project-link" target="_blank">
+                                    <i class="fas fa-eye"></i> View Design
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card" data-category="app" data-aos="fade-up" data-aos-delay="800">
+                        <div class="project-img">
+                            <img src="images/mobile restaurant.png" alt="Restaurant Mobile App" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Restaurant Mobile App</h3>
+                            <p class="project-description">
+                                A cross-platform restaurant application built with Flutter, featuring menu browsing,
+                                food ordering, and restaurant search functionality.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Dart</span>
+                                <span class="tag">Mobile</span>
+                                <span class="tag">Cross-platform</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/CarlAbigania/Restaurant-Mobile-App.git" class="project-link"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-more">
+                    <a href="#" class="btn btn-primary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications section" id="certifications">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="section-subtitle">My Achievements</div>
+                    <div class="section-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="certifications-timeline">
+                    <!-- Certification 1 -->
+                    <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="certification-content">
+                            <div class="certification-date">2023</div>
+                            <h3 class="certification-title">Full Stack Web Development</h3>
+                            <p class="certification-issuer">Udemy</p>
+                            <p class="certification-description">
+                                Comprehensive course covering modern web development technologies and best practices.
+                            </p>
+                            <a href="#" class="certification-link">View Certificate</a>
+                        </div>
+                    </div>
+
+                    <!-- Certification 2 -->
+                    <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="certification-content">
+                            <div class="certification-date">2022</div>
+                            <h3 class="certification-title">UI/UX Design Specialization</h3>
+                            <p class="certification-issuer">Coursera</p>
+                            <p class="certification-description">
+                                Advanced course on user interface and experience design principles and methodologies.
+                            </p>
+                            <a href="#" class="certification-link">View Certificate</a>
+                        </div>
+                    </div>
+
+                    <!-- Certification 3 -->
+                    <div class="certification-item" data-aos="fade-up" data-aos-delay="600">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="certification-content">
+                            <div class="certification-date">2021</div>
+                            <h3 class="certification-title">JavaScript Algorithms and Data Structures</h3>
+                            <p class="certification-issuer">freeCodeCamp</p>
+                            <p class="certification-description">
+                                In-depth study of JavaScript algorithms, data structures, and problem-solving
+                                techniques.
+                            </p>
+                            <a href="#" class="certification-link">View Certificate</a>
+                        </div>
+                    </div>
+
+                    <!-- Certification 4 -->
+                    <div class="certification-item" data-aos="fade-up" data-aos-delay="800">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="certification-content">
+                            <div class="certification-date">2020</div>
+                            <h3 class="certification-title">Responsive Web Design</h3>
+                            <p class="certification-issuer">freeCodeCamp</p>
+                            <p class="certification-description">
+                                Certification in creating responsive and mobile-first web designs using HTML and CSS.
+                            </p>
+                            <a href="#" class="certification-link">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery section" id="gallery">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Gallery</h2>
+                    <div class="section-subtitle">My Visual Showcase</div>
+                    <div class="section-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="gallery-filter" data-aos="fade-up" data-aos-delay="200">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="photography">Photography</button>
+                    <button class="filter-btn" data-filter="artwork">Artwork</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item" data-category="design" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="gallery-img">
+                            <img src="images/website design.png" alt="Website Design" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3 class="gallery-title">Website Design</h3>
+                                    <p class="gallery-category">Design</p>
+                                </div>
+                                <div class="gallery-links">
+                                    <a href="#" class="gallery-link">
+                                        <i class="fas fa-search-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item" data-category="photography" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="gallery-img">
+                            <img src="images/urban landscape.jfif" alt="Urban Landscape" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3 class="gallery-title">Urban Landscape</h3>
+                                    <p class="gallery-category">Photography</p>
+                                </div>
+                                <div class="gallery-links">
+                                    <a href="#" class="gallery-link">
+                                        <i class="fas fa-search-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item" data-category="artwork" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="gallery-img">
+                            <img src="images/digital art.jpg" alt="Digital Illustration" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3 class="gallery-title">Digital Illustration</h3>
+                                    <p class="gallery-category">Artwork</p>
+                                </div>
+                                <div class="gallery-links">
+                                    <a href="#" class="gallery-link">
+                                        <i class="fas fa-search-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item" data-category="design" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="gallery-img">
+                            <img src="images/logo.png" alt="Logo Design" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3 class="gallery-title">Logo Design</h3>
+                                    <p class="gallery-category">Design</p>
+                                </div>
+                                <div class="gallery-links">
+                                    <a href="#" class="gallery-link">
+                                        <i class="fas fa-search-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item" data-category="photography" data-aos="zoom-in" data-aos-delay="700">
+                        <div class="gallery-img">
+                            <img src="images/nature.jfif" alt="Nature Close-up" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3 class="gallery-title">Nature Close-up</h3>
+                                    <p class="gallery-category">Photography</p>
+                                </div>
+                                <div class="gallery-links">
+                                    <a href="#" class="gallery-link">
+                                        <i class="fas fa-search-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item" data-category="artwork" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="gallery-img">
+                            <img src="images/abstract.jpg" alt="Abstract Art" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3 class="gallery-title">Abstract Art</h3>
+                                    <p class="gallery-category">Artwork</p>
+                                </div>
+                                <div class="gallery-links">
+                                    <a href="#" class="gallery-link">
+                                        <i class="fas fa-search-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-subtitle">Get In Touch</div>
+                    <div class="section-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3 class="contact-card-title">Email</h3>
+                            <p class="contact-card-data">Abiganiacarlo687@gmail.com</p>
+                            <a href="mailto:Abiganiacarlo687@gmail.com" class="contact-card-link">Write Me</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h3 class="contact-card-title">Phone</h3>
+                            <p class="contact-card-data">09942152471</p>
+                            <a href="tel:09942152471" class="contact-card-link">Call Me</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <h3 class="contact-card-title">LinkedIn</h3>
+                            <p class="contact-card-data">John Carlo Abigania</p>
+                            <a href="#" class="contact-card-link">Connect With Me</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container" data-aos="fade-left" data-aos-delay="400">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="Your Email"
+                                    required>
+                            </div>
+
+                            <div class="form-group form-group-full">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Subject"
+                                    required>
+                            </div>
+
+                            <div class="form-group form-group-full">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+
+                            <div class="form-group form-group-full">
+                                <button type="submit" class="btn btn-primary form-button">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="#hero" class="footer-logo">
+                        <span class="logo-text">John Carlo E. Abigania</span>
+                    </a>
+                    <p class="footer-description">
+                        Web Developer & Designer | BSIT Graduate from Pamantasan ng Cabuyao
+                    </p>
+                </div>
+
+                <div class="footer-social">
+                    <h3 class="footer-social-title">Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/carlo.abigania" class="social-link" aria-label="Facebook"
+                            target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/carlo.abigania/" class="social-link" aria-label="Instagram"
+                            target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@JustRandom447" class="social-link" aria-label="YouTube"
+                            target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://github.com/CarlAbigania" class="social-link" aria-label="GitHub"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://t.me/carloabigania" class="social-link" aria-label="Telegram" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://discord.com/users/762126515772194826" class="social-link" aria-label="Discord"
+                            target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://strava.com/athletes/142804502" class="social-link" aria-label="Strava"
+                            target="_blank">
+                            <i class="fab fa-strava"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; <span id="current-year">2025</span> John Carlo E. Abigania. All rights reserved.
+                </p>
+                <a href="#hero" class="back-to-top" aria-label="Back to top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Inspired By Popup -->
+    <div class="inspired-by-popup" id="inspired-by-popup">
+        <div class="popup-content">
+            <button class="popup-close" id="popup-close" aria-label="Close popup">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="popup-message" id="popup-message">Inspired by</div>
+            <div class="inspired-by-image-container">
+                <!-- Placeholder for image -->
+                <div class="image-placeholder">
+                    <i class="fas fa-image"></i>
+                    <p>Image Placeholder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox for Gallery -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" id="lightbox-next" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/particles.min.js"></script>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
